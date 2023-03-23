@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webspot - Introduction</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="shortcut icon" href="tab logo (1).png" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="logo"></div>
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a class="active" href="introduction.html">Introduction</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="content">
+		<div class="fiverr" onclick="window.open('https://www.fiverr.com/webbiz_works?source=wp_ss_show', '_blank')"></div>
+		<h1>Introduction</h1>
+		<p>This is where I introduce myself and my skills.</p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".navbar a").click(function(){
+				$(".navbar a").removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
